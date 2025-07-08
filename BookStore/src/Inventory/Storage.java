@@ -1,6 +1,7 @@
 package Inventory;
 import Book.Book;
 
+import java.time.Year;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -44,6 +45,15 @@ public class Storage {
 
     public void sell(Book book, int quantity){
         booksAvailable.put(book, booksAvailable.get(book) - quantity);
+    }
+
+    public void removeExpired (Book book){
+        int currentYear = Year.now().getValue();
+        if(currentYear - Integer.parseInt(book.getYear()) > 5)
+            booksAvailable.put(book, 0);
+        else
+            throw new IllegalArgumentException("The book date is still valid.")
+
     }
 
 }

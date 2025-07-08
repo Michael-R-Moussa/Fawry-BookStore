@@ -27,7 +27,7 @@ public class Customer {
         return address;
     }
 
-    public Customer(String name, String email, String address){
+    public Customer(String name, String address, String email){
         this.email = email;
         this.name = name;
         this.address = address;

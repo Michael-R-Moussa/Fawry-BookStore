@@ -11,28 +11,26 @@ public class Main {
         Book showcase = new ShowCase("854fdfsd", "Demo book", "1988");
 
         Storage storage = new Storage();
-        storage.addBook(book,20);
+        storage.addBook(book,2);
         storage.addBook(ebook, 15);
         storage.addBook(showcase, 5);
 
         storage.checkAllbooks();
         
-        Customer Michael = new Customer("Michael","Michael@gmail.com","15Faisal");
+        Customer Michael = new Customer("Michael","15Faisal");
         
         //the following is to showcase the lack of email or address
         Customer Ahmed = new Customer("Ahmed","15Faisal");
         Customer Hany = new Customer("Hany");
 
+        Michael.buy(book, 1);
         Michael.buy(ebook, 2);
-        Michael.buy(book, 3);
-        CheckoutOrder Michaelcheck = new CheckoutOrder(Michael.getCart());
+        // CheckoutOrder Michaelcheck = new CheckoutOrder(Michael.getCart());
 
+        storage.removeExpired(book);
         storage.checkAllbooks();
 
-        // Ahmed.buy(ebook, 2);
-        Ahmed.buy(book, 3);
-        CheckoutOrder Ahmedcheck = new CheckoutOrder(Ahmed.getCart());
 
-        storage.checkAllbooks();
+
     }
 }
