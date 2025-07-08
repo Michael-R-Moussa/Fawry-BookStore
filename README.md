@@ -79,17 +79,18 @@ This is a simple Java-based BookStore system that supports physical and electron
 - The `ShowCase` book is not for sale and cannot be delivered.
 - The `PaperBook` and `EBook` classes implement their own delivery logic.
 
-Test cases:
-1- Successful attempts
+###Test cases
+
+## Successful attempts
 ![image](https://github.com/user-attachments/assets/a0de696f-adcb-43b1-bce1-09ad076b457e)
 
-2- Insufficient amount of books:
+## Insufficient amount of books:
 ![image](https://github.com/user-attachments/assets/f38de6d1-c169-4d7e-b6f6-31e6ceb3e282)
 
-3- Email not provided
+## Email not provided
 ![image](https://github.com/user-attachments/assets/2524c74e-3450-4b7b-99cc-f3b3d8a7a166)
 
-4- Removing books after a certain amount
+## Removing books after a certain amount
 ![image](https://github.com/user-attachments/assets/eb3e597a-7609-44aa-8d7e-6a3058aed701)
 
 
